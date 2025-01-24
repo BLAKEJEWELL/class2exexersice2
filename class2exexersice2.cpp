@@ -11,8 +11,12 @@ using namespace std;
 
 void main()
 {
-    double payrate = 15.00;
-    double hours = 41;
+    double payrate;
+    double hours;
+    cout << "please enter the number of hours you worked:";
+    cin >> hours;
+    cout << "please enter your payrate:";
+    cin >> payrate;
     double grosspay = payrate * hours;
     cout << fixed << setprecision(2) << "your gross pay will be $" << grosspay << "\n";
     cout << fixed << setprecision(2) << "you worked" << hours << "\nat a payrate of" << payrate;
